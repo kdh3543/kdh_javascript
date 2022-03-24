@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul>
+
+        <script>
+            //객체 생성
+            var grades = {
+                'egoing': 10, 'k8805': 6, 'kdh': 80
+            };
+
+            //다른 방법으로 객체 만드는 법
+            var grade2 = new Object();
+            grade2['egoing'] = 10;
+            grade2['kdh'] = 8;
+
+            //객체를 반복문으로 사용하는 법
+            for (key in grades) {
+                document.write("<li>key: " + key + " value: " + grades[key] + "<br/></li>");
+            }
+        </script>
+
+    </ul>
+</body>
+
+</html>

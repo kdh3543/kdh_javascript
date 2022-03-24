@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function get_members(){
+            return ['egoing', 'k8805', 'sorialgi'];
+        }
+        members = get_members(); 
+        //toUpperCase() 소문자를 대문자로
+        // for(var i = 0; i < members.length; i++){
+        //     document.write(members[i].toUpperCase()+"<br/>");
+        // }
+        
+        //concat
+        members = members.concat('c','d');
+        // for(var i = 0; i < members.length; i++){
+        //     document.write(members[i].toUpperCase()+"<br/>");
+        // }
+
+        //unshift
+        members.unshift('z');
+        // for(var i = 0; i < members.length; i++){
+        //     document.write(members[i].toUpperCase()+"<br/>");
+        // }
+
+        //splice
+        members.splice(1,0,'x','y');
+        // for(var i = 0; i < members.length; i++){
+        //     document.write(members[i].toUpperCase()+"<br/>");
+        // }
+        //shift
+        members.shift();
+        // for(var i = 0; i < members.length; i++){
+        //     document.write(members[i].toUpperCase()+"<br/>");
+        // }
+        //sort
+        members.sort();
+        // for(var i = 0; i < members.length; i++){
+        //     document.write(members[i].toUpperCase()+"<br/>");
+        // }
+        //reverse
+        members.reverse();
+        for(var i = 0; i < members.length; i++){
+            document.write(members[i].toUpperCase()+"<br/>");
+        }
+    </script>
+</body>
+</html>
