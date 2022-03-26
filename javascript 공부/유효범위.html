@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    var vsscope = 'global';
+    function fscope() {
+      var vsscope = 'local';
+      var lv = 'local variables';
+      alert(lv);
+    }
+    function fscope2() {
+      alert(vsscope);
+    }
+
+    // fscope();
+    // fscope2();
+
+    // function a (){
+    //   i = 0;
+    // }
+    // for(var i = 0; i < 5; i++){
+    //   a();
+    //   document.write(i);
+    // }
+
+    //전역변수 사용
+    // MYAPP = {}
+    // MYAPP.calculator = {
+    //   'left': null,
+    //   'right': null
+    // }
+    // MYAPP.coordinate = {
+    //   'left': null,
+    //   'right': null
+    // }
+
+    // MYAPP.calculator.left = 10;
+    // MYAPP.calculator.right = 20;
+    // MYAPP.coordinate.left = 'left';
+    // MYAPP.coordinate.right = 'right';
+    // function add() {
+    //   return MYAPP.coordinate.left + MYAPP.coordinate.right;
+    // }
+    // function sum() {
+    //   return MYAPP.calculator.left + MYAPP.calculator.right;
+    // }
+    // document.write(sum() + '<br>');
+    // document.write(add());
+
+    // for (var i = 0; i < 1; i++) {
+    //   var name = 'coding everybody';
+    // }
+    // alert(name);
+
+    
+  </script>
+</body>
+
+</html>
